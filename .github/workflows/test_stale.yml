@@ -5,6 +5,7 @@ on:  # yamllint disable-line rule:truthy
   schedule:
     - cron: '0 18 * * *'  
   workflow_dispatch:
+
 jobs:
   test_stale_pr:
     uses: TheNova22/ansible-content-actions/.github/workflows/check_label.yaml@close-stale-items
