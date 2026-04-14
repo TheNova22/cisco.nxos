@@ -3,7 +3,7 @@ name: "Test Stale PR Closure"
 
 on:  # yamllint disable-line rule:truthy
   schedule:
-    - cron: '0 18 * * *'  
+    - cron: '10 18 * * *'  
   workflow_dispatch:
 
 jobs:
