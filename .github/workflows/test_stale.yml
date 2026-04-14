@@ -3,12 +3,12 @@ name: "Test Stale PR Closure"
 
 on:  # yamllint disable-line rule:truthy
   schedule:
-    - cron: '10 18 * * *'  
+    - cron: '15 18 * * *'  
   workflow_dispatch:
 
 jobs:
   test_stale_pr:
-    uses: TheNova22/ansible-content-actions/.github/workflows/check_label.yaml@close-stale-items
+    uses: TheNova22/ansible-content-actions/.github/workflows/close_stale_issues_pr.yml@close-stale-items
     with:
       days-before-stale: 0
       days-before-close: 1
