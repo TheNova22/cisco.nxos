@@ -11,4 +11,4 @@ jobs:
     uses: TheNova22/ansible-content-actions/.github/workflows/close_stale_issues_pr.yml@close-stale-items
     with:
       days-before-stale: 0
-      days-before-close: 1
+      days-before-close: 0
