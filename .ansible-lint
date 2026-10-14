@@ -2,4 +2,9 @@
 profile: production
 
 exclude_paths:
-  - changelogs/changelog.yaml
+  - changelogs
+  - docs
+  - .github
+
+warn_list:
+  - no-log-password
